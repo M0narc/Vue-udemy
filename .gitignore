@@ -19,3 +19,13 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.vue_proyect/ 
