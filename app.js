@@ -34,6 +34,6 @@ Vue.createApp({
 //     inputEl.value = '';
 // }
 
-// //click listener 'clicl' event passing click as a string as a first argument
+// //click listener 'click' event passing click as a string as a first argument
 // // the second arg is the function that we need to trigger when the click occurs
 // buttonEl.addEventListener('click', addGoal)
