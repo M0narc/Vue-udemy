@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A First App</title>
-    <link rel="stylesheet" href="/css/styles.css"/>
-    
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div id="app">
       <div>
         <label for="goal">Goal</label>
-        <!-- directive inserted for Vue in order to conect it to enteredValue -->
-        <input type="text" id="goal" v-model="enteredValue" placeholder="Enter goal" />
-        <button v-on:click="addGoal">Add Goal</button>
+        <input type="text" id="goal" />
+        <button>Add Goal</button>
       </div>
       <ul>
-        <li v-for="goal in goals">{{ goal }}</li>
+        <li>Test</li>
       </ul>
     </div>
-    <script src="https://unpkg.com/vue@3"></script>
     <script src="app.js"></script>
   </body>
 </html>
