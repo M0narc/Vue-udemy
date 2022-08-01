@@ -48,3 +48,29 @@ methods allow you to use functions (like using an event)
 clicks for example can be a trigger
 in order to use "data" inside a Vue app
 you need to use "this.nameOfData" to refer to it
+
+MORE DIRECTIVES
+v-on:
+is an eventlistener for Vue
+which for a button is the equivalent of
+document.querySelector('button').addEventListener()
+and it takes an argument
+Argument that is what you want it to listen
+click, mouseenter,mouseleave, etc.
+Using methods is something that will come in handy here
+like in the third can where we're using 
+the addCounter(num) method, we can use it as a 
+simple method, or a method with an event argument
+
+mdn input in google
+
+using inputs is a little bit different
+see setName(event)
+you can use the ($event, etc) to take the event as the first
+argument
+
+Event modifiers, check the forms in can three
+v-on:submit.prevent
+used in forms to PREVENT them from reloading the page
+that is a build in from Vue, instead of 
+prevent.default()
