@@ -1,3 +1,6 @@
+//this is a declarative approach using Vue
+//declarative == we declare a template lol
+
 Vue.createApp({
     //a property name data which has a funct as a value
     data() {

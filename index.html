@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <div id="app">
-      <div>
-        <label for="goal">Goal</label>
-        <input type="text" id="goal" />
-        <button>Add Goal</button>
-      </div>
-      <ul>
-        <li>Test</li>
-      </ul>
-    </div>
+    <header>
+      <h1>Vue Course Goals</h1>
+    </header>
+    <section id="user-goal">
+      <h2>My course goal</h2>
+      <!--interpolation-->
+      <p>{{ outputGoal() }}</p>
+      <!--using the "v-bind" directive to use data
+      IN the attributes tags--> 
+      <p>Learn more <a v-bind:href="vueLink">about Vue</a></p>
+    </section>
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="app.js"></script>
   </body>
 </html>

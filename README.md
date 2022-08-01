@@ -29,3 +29,22 @@ we can controll everything with Vue in a page
 this  is "single-page-application"(SPA) approach.
 Server only sends one HTML page, thereaftre, Vue takes over and controls
 the UI.
+
+app.mount(Selector)
+Vue controls all parent and all child elements 
+
+data
+interpolation is used in the html pages like
+{{courseGoal}}
+and it's alternative to use in the tags would be the v-bind 
+directives -> something like:
+<a v-bind:href="vueLink"> </a>
+another directive to insert raw HTML code would be
+<p v-html> {{ some data as html}} <p>
+"the content should be displayed as html"
+
+Methods
+methods allow you to use functions (like using an event)
+clicks for example can be a trigger
+in order to use "data" inside a Vue app
+you need to use "this.nameOfData" to refer to it
