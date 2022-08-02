@@ -74,3 +74,37 @@ v-on:submit.prevent
 used in forms to PREVENT them from reloading the page
 that is a build in from Vue, instead of 
 prevent.default()
+
+
+there is a concept called "two-way-binding"
+that is used to shorten code:
+v-bind:value="" v-on:input=""
+can be shortened by  a simple
+v-model=""
+we are listening to the code event and updating
+the value property.
+
+v-model="" == best directive banzai
+
+COMPUTED PROPERTIES
+
+computed:{}, section gets treated like the data()
+section, even though you're using functions like
+in the methods section
+
+only use methods if you know that you want to
+recalculate when anything in the page changes,
+in most cases that does not happen, so it is better
+to use computed properties to display data,
+methods Run everytime, computed properties do not,
+unless a dependancy changes.
+
+
+WATCHERS
+a watcher is a function you can tell Vue to
+execute when one of their dependancies change,
+sounds like computed properties doesn't it?
+you can use W instead of CP when you really want
+to keep an eye on something, like the counter we have, if it is greater than 50 it resets, 
+you don't need to create a complex function to see that in CP because the W is always... watching
+https requests, or timers for example are other great choices
