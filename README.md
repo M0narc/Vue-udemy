@@ -108,3 +108,28 @@ you can use W instead of CP when you really want
 to keep an eye on something, like the counter we have, if it is greater than 50 it resets, 
 you don't need to create a complex function to see that in CP because the W is always... watching
 https requests, or timers for example are other great choices
+
+
+Summary for me:
+Methods 
+- Use with event binding OR data binding
+- Data binding: method is executed for every 
+    "re-render" cycle of the component
+- Use for events or data that really needs to be 
+ re-evaluated all the time 
+
+ Computed properties
+ - Use with data binding 
+ - Computed properties are only re-evaluated if
+    one of their "used values" changed
+- Use for data that depends on other data
+
+Watchers
+- Not used directly in template
+- Allows you tu run any code in reaction to 
+    changed data(e.g. send http requests etc.)
+- Use for any non-data update you want to make
+
+V-bind Shorthands:
+v-on:click == @click
+v-bind:value="" == :value=""
